@@ -16,6 +16,7 @@ public class FaucetControl : MonoBehaviour
 
     public void StartWater()
     {
+        Debug.Log("Water Running!");
         if (!waterRunning)
         {
             co = StartCoroutine(DropWater());
@@ -26,6 +27,7 @@ public class FaucetControl : MonoBehaviour
 
     public void StopWater()
     {
+        Debug.Log("Water Stopped!");
         if (waterRunning)
         {
             StopCoroutine(co);
